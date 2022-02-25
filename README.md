@@ -1,9 +1,9 @@
 # {VSP}
 ## Rick and Morty Guide
 
-<img src="./testereactnative/screenshot1.png" alt="Imagem tela inicial">
-<img src="./testereactnative/screenshot2.png" alt="Imagem tela de descrição">
-<img src="./testereactnative/screenshot3.png" alt="Imagem descrição personagem">
+<img src="./TesteReactNative/screenshot1.png" alt="Imagem tela inicial">
+<img src="./TesteReactNative/screenshot2.png" alt="Imagem tela de descrição">
+<img src="./TesteReactNative/screenshot3.png" alt="Imagem descrição personagem">
 
 > Desenvolvido para trazer informações de episódios e personagens de Rick and Morty 
 > Desenvolvido para Teste de Código
