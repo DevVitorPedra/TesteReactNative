@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { ScrollView, StatusBar, ImageBackground } from 'react-native'
-import { StyledText } from './components/card/style'
-import Card from './components/card'
-import Header from './components/header'
+import { StyledText } from '../components/card/style'
+import Card from '../components/card'
+import Header from '../components/header'
 import { StyledPagination, StyledPaginationButton } from './style'
 
 export default function HomeSCreen({ navigation }) {

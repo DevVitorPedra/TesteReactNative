@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { FlatList, ImageBackground, ScrollView, Text, View } from 'react-native'
 import Character from '../Character'
-import Card from '../Home/components/card'
-import { StyledText } from '../Home/components/card/style'
-import Header from '../Home/components/header'
+import Card from '../components/card'
+import { StyledText } from '../components/card/style'
+import Header from '../components/header'
 import { StyledCharAvatar, StyledDetailsCard, StyledEpisodeName, StyledEpisodeCard } from './style'
 export default function Details({ navigation, route }) {
 
