@@ -8,19 +8,22 @@
 > Desenvolvido para trazer informações de episódios e personagens de Rick and Morty 
 > Desenvolvido para Teste de Código
 ### Requisitos de avaliação
+
 O projeto foi finalizado, adequando os requisitos:
 
 - [x] Listar os episódios
-- [x] transição entre telas
+- [x] Transição entre telas
 - [x] Detalhes dos episódios
-- [x] Adicionei também detalhes de cada personagem no episódio
+- [x] Detalhes de cada personagem no episódio
 
 
 
 
 ## 💻 Pré-requisitos
-  Ter React Native CLI
-  Node e NPM ou YARN
+
+
+  Ter React Native CLI,
+  Node e NPM ou YARN,
   Emulador Mobile, ou dispositivo físico
  -
 
