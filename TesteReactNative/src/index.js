@@ -23,6 +23,7 @@ import { createNativeStackNavigator} from '@react-navigation/native-stack'
 const Stack = createNativeStackNavigator()
 import HomeScreen from './Home';
 import Details from './Details';
+import CharacterDetails from './CharacterDetails';
 import 'react-native-gesture-handler'
 const App = () => {
 
@@ -34,6 +35,7 @@ const App = () => {
                 name='Details'
                 component={ Details }
                 options={opt2} />
+                <Stack.Screen name="CharacterDetails" component={CharacterDetails}  options={opt3}/>
     </Stack.Navigator>
     </NavigationContainer>
   );
@@ -52,6 +54,14 @@ const opt = {
 }
 const opt2 = {
   title:'Episode Details',
+   headerTitleAlign:'center',
+   headerTitleStyle: {fontWeight:'bold'},
+   headerStyle:{
+     backgroundColor:'#08A8CC',
+   }
+}
+const opt3 = {
+  title:'Character Details',
    headerTitleAlign:'center',
    headerTitleStyle: {fontWeight:'bold'},
    headerStyle:{
