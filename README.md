@@ -27,6 +27,7 @@ O projeto foi finalizado, adequando os requisitos:
   Node e NPM ou YARN
   
   Emulador Mobile ou dispositivo físico
+  
  -
 
 
