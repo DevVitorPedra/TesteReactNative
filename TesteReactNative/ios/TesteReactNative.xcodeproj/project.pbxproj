@@ -28,6 +28,7 @@
 		DCAEA7FCB6824E1BB0763B1B /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8FE80A9A3A6C4BE282F0D3D1 /* Octicons.ttf */; };
 		54F6DBAFF2E348DF9CA61876 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E5F5DB065F04FA899E91ADE /* SimpleLineIcons.ttf */; };
 		B0F133E618A4484B98C37ADB /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCCD55D2F8824B2B8C12F6DE /* Zocial.ttf */; };
+		8AFB8AD5906B46AD9E71AC61 /* RickandMorty.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E180110E90E42A4A50F41AB /* RickandMorty.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		8FE80A9A3A6C4BE282F0D3D1 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		3E5F5DB065F04FA899E91ADE /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		CCCD55D2F8824B2B8C12F6DE /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4E180110E90E42A4A50F41AB /* RickandMorty.ttf */ = {isa = PBXFileReference; name = "RickandMorty.ttf"; path = "../assets/fonts/RickandMorty.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				8FE80A9A3A6C4BE282F0D3D1 /* Octicons.ttf */,
 				3E5F5DB065F04FA899E91ADE /* SimpleLineIcons.ttf */,
 				CCCD55D2F8824B2B8C12F6DE /* Zocial.ttf */,
+				4E180110E90E42A4A50F41AB /* RickandMorty.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				DCAEA7FCB6824E1BB0763B1B /* Octicons.ttf in Resources */,
 				54F6DBAFF2E348DF9CA61876 /* SimpleLineIcons.ttf in Resources */,
 				B0F133E618A4484B98C37ADB /* Zocial.ttf in Resources */,
+				8AFB8AD5906B46AD9E71AC61 /* RickandMorty.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

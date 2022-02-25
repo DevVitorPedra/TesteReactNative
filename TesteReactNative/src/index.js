@@ -7,19 +7,8 @@
  */
 
 import React from 'react';
-
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
-
-import { NavigationContainer} from '@react-navigation/native'
-import { createNativeStackNavigator} from '@react-navigation/native-stack'
+import { NavigationContainer } from '@react-navigation/native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
 const Stack = createNativeStackNavigator()
 import HomeScreen from './Home';
 import Details from './Details';
@@ -30,43 +19,25 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName='Home'>
-      <Stack.Screen  name="Home" component={HomeScreen} options={opt}/>
-      <Stack.Screen
-                name='Details'
-                component={ Details }
-                options={opt2} />
-                <Stack.Screen name="CharacterDetails" component={CharacterDetails}  options={opt3}/>
-    </Stack.Navigator>
+        <Stack.Screen name="Home" component={HomeScreen} options={opt} />
+        <Stack.Screen
+          name='Details'
+          component={Details}
+          options={opt2} />
+        <Stack.Screen name="CharacterDetails" component={CharacterDetails} options={opt3} />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 };
 
 const opt = {
-  title:'Rick And Morty Guide',
-    
-  headerTitleAlign:'center',
-  headerTitleStyle: {fontWeight:'bold'},
-  headerStyle:{
-    backgroundColor:'#08A8CC',
-  }
-   
-  
+  headerShown: false,
 }
 const opt2 = {
-  title:'Episode Details',
-   headerTitleAlign:'center',
-   headerTitleStyle: {fontWeight:'bold'},
-   headerStyle:{
-     backgroundColor:'#08A8CC',
-   }
+  headerShown: false
 }
 const opt3 = {
-  title:'Character Details',
-   headerTitleAlign:'center',
-   headerTitleStyle: {fontWeight:'bold'},
-   headerStyle:{
-     backgroundColor:'#08A8CC',
-   }
+  headerShown: false
 }
 
 export default App;
