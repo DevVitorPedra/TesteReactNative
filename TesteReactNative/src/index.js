@@ -51,8 +51,7 @@ const opt = {
   
 }
 const opt2 = {
-  title:'Details',
-    
+  title:'Episode Details',
    headerTitleAlign:'center',
    headerTitleStyle: {fontWeight:'bold'},
    headerStyle:{
