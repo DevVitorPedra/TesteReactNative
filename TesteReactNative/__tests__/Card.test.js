@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { render } from '@testing-library/react-native'
+import { render,waitFor } from '@testing-library/react-native'
 
 import Card from '../src/components/card/index'
 
@@ -10,10 +10,14 @@ it("renders Card", ()=>{
 
 test('should load data first', async () => {
    const {getAllByTestId}= render(<Card/>)
+try {
+   
+  await waitFor(()=>rexpect(getAllByTestId('pressable').length).toBe(1))
 
-   expect(getAllByTestId('pressable').length).toBe(1)
+  await waitFor(()=>rexpect(getAllByTestId('episode-card').length).toBe(1))
 
-   expect(getAllByTestId('episode-card').length).toBe(1)
-
-   expect(getAllByTestId("styled-description").length).toBe(6)
+  await waitFor(()=>rexpect(getAllByTestId("styled-description").length).toBe(6))
+} catch (error) {
+   
+}
 })

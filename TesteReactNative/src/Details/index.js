@@ -23,25 +23,25 @@ export default function Details({ navigation, route }) {
 
   return (
     <>
-      <Header title="Episode Details" />
-      <StyledDetailsCard contentContainerStyle={{ alignItems: 'center' }}>
+      <Header  title="Episode Details" />
+      <StyledDetailsCard testID="scrollview" contentContainerStyle={{ alignItems: 'center' }}>
         {(data.length == 0) ?
           <>
-            <ImageBackground style={{ flex: 1, width: 400, height: 400, paddingBottom: 10 }} source={{ uri: "https://www.looper.com/img/gallery/the-surprising-reason-rick-and-morty-fans-petitioned-the-show/l-intro-1623971871.jpg" }}></ImageBackground>
-            <StyledText>You Again???</StyledText>
-            <StyledText>Really???</StyledText>
+            <ImageBackground testID='loading-image' style={{ flex: 1, width: 400, height: 400, paddingBottom: 10 }} source={{ uri: "https://www.looper.com/img/gallery/the-surprising-reason-rick-and-morty-fans-petitioned-the-show/l-intro-1623971871.jpg" }}></ImageBackground>
+            <StyledText testID='loading-text' >You Again???</StyledText>
+            <StyledText testID='loading-text' >Really???</StyledText>
           </> :
 
           <>
-            <StyledEpisodeCard>
-              <StyledEpisodeName>{data.name}</StyledEpisodeName>
-              <Text>was released in</Text>
-              <StyledEpisodeName>{data.air_date}</StyledEpisodeName>
-            </StyledEpisodeCard>
-            <StyledEpisodeCard>
-              <StyledText>Starring</StyledText>
+            <StyledEpisodeCard testID="episode-card">
+              <StyledEpisodeName testID='text-name' >{data.name}</StyledEpisodeName>
+              <Text testID='text' >was released in</Text>
+              <StyledEpisodeName testID='text'>{data.air_date}</StyledEpisodeName>
+            </StyledEpisodeCard >
+            <StyledEpisodeCard testID='episode-card'>
+              <StyledText testID='text'>Starring</StyledText>
               {characters.map(item => {
-                return <Character key={item} navigation={navigation} url={item} />
+                return <Character testID='characters' key={item} navigation={navigation} url={item} />
               })}
             </StyledEpisodeCard>
           </>}

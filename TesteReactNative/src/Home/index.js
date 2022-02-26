@@ -24,28 +24,28 @@ export default function HomeSCreen({ navigation }) {
     <>
       <StatusBar barStyle='light-content' backgroundColor={'black'} />
       <Header title="Rick and Morty Guide" />
-      <ScrollView contentContainerStyle={{ alignItems: 'center' }} style={{ backgroundColor: '#67E756' }}>
+      <ScrollView testID='scrollview' contentContainerStyle={{ alignItems: 'center' }} style={{ backgroundColor: '#67E756' }}>
         {(data.length == 0) ?
           <>
-            <ImageBackground style={{ flex: 1, width: 400, height: 400, paddingBottom: 10 }} source={{ uri: "https://www.looper.com/img/gallery/the-surprising-reason-rick-and-morty-fans-petitioned-the-show/l-intro-1623971871.jpg" }}></ImageBackground>
-            <StyledText>Hold on!!!</StyledText>
-            <StyledText>We're loading!!!</StyledText>
+            <ImageBackground testID='loading-image' style={{ flex: 1, width: 400, height: 400, paddingBottom: 10 }} source={{ uri: "https://www.looper.com/img/gallery/the-surprising-reason-rick-and-morty-fans-petitioned-the-show/l-intro-1623971871.jpg" }}></ImageBackground>
+            <StyledText testID='loading-text'>Hold on!!!</StyledText>
+            <StyledText testID='loading-text'>We're loading!!!</StyledText>
           </>
           :
           <>
             {data.results.map((item) => {
-              return <Card key={item.name} name={item.name} episode={item.episode} date={item.air_date} navigation={navigation} id={item.id} />
+              return <Card testID='card' key={item.name} name={item.name} episode={item.episode} date={item.air_date} navigation={navigation} id={item.id} />
             })}
           </>
         }
       </ScrollView>
-      {(data.length == 0) ? null : <StyledPagination>
-        {(data.info.prev) ? <StyledPaginationButton color="#08A8CC" title="Prev" onPress={() => {
+      {(data.length == 0) ? null : <StyledPagination testID='pagination'>
+        {(data.info.prev) ? <StyledPaginationButton testID='pagination-prev' color="#08A8CC" title="Prev" onPress={() => {
           setData('')
           setUrl(data.info.prev)
         }} /> : null}
         
-        {(data.info.next) ? <StyledPaginationButton color="#08A8CC" title="Next" onPress={() => {
+        {(data.info.next) ? <StyledPaginationButton testID='pagination-next' color="#08A8CC" title="Next" onPress={() => {
           setData('')
           setUrl(data.info.next)
         }} /> : null}

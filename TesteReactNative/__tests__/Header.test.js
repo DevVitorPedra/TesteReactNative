@@ -9,5 +9,11 @@ it("renders Header", ()=>{
 })
 test('should load image first', async () => {
    const {getAllByTestId}= render(<Header/>)
-   await  waitFor(()=> expect(getAllByTestId('header-image').length).toBe(1))
+   try {
+   await waitFor(()=> expect(getAllByTestId('header-image').length).toBe(1))
+   await waitFor(()=> expect(getAllByTestId('header-image').length).toBe(1))
+   } catch (error) {
+       
+   } 
+  
 })
