@@ -41,10 +41,6 @@ Faça um git clone do projeto ou fork, e mande instalar as dependências,
 utilizando o NPM install ou yarn
 Utilize o comando npx react-native run-android ou run-ios
 Será inicializado no Emulador ou no físico caso esteja plugado via usb
-Para gerar um apk, vc pode usar o comando
-npx react-native bundle --dev false --platform android --entry-file index.js --bundle-output ./android/app/src/main/assets/index.android.bundle --assets-dest ./android/app/src/main/res
-
-e verificar na pasta destino dos outputs pelo apk_debug
 ```
 
 
