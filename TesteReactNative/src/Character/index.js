@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Pressable } from 'react-native'
 import { StyledEpisodeCard } from '../Details/style'
 import { StyledText } from '../components/card/style'
-import { StyledCharAvatar } from './style'
+import { StyledCharAvatar } from '../components/avatar/style'
 import Avatar from '../components/avatar'
 
 export default function Character({ navigation, url }) {
@@ -22,7 +22,7 @@ export default function Character({ navigation, url }) {
   return (
     <Pressable testID='pressable' onPress={() => navigation.navigate('CharacterDetails', { url: url })}>
       <StyledEpisodeCard testID='episode-card'>
-        <Avatar testID="avatar" url={data.image}/>
+        <StyledCharAvatar testID="avatar" source={{ uri: data.image }} />
         <StyledText testID="text-name">{data.name}</StyledText>
       </StyledEpisodeCard>
     </Pressable>
