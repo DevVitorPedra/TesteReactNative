@@ -4,7 +4,7 @@ import { render } from '@testing-library/react-native'
 
 import PaginationButton from './index'
 
-it("renders Avatar correctly", ()=>{
-    render(<PaginationButton/>)
+it("renders PaginationButton correctly", ()=>{
+    render(<PaginationButton title=''prev/>)
 })
 

@@ -22,7 +22,7 @@ export default function Character({ navigation, url }) {
   return (
     <Pressable testID='pressable' onPress={() => navigation.navigate('CharacterDetails', { url: url })}>
       <EpisodeCard testID='episode-card'>
-      <Avatar url={data.image}/>
+      <Avatar testID="avatar" url={data.image}/>
         <Texts testID="text-name">{data.name}</Texts>
       </EpisodeCard>
     </Pressable>

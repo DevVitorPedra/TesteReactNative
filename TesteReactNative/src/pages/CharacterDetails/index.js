@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { ImageBackground, Text } from 'react-native'
-import { StyledCharacterCard } from './style'
 import Header from '../../Widgets/header'
 import Avatar from '../../components/avatar'
 import Texts from '../../components/text'

@@ -4,7 +4,7 @@ import { render } from '@testing-library/react-native'
 
 import EpisodeCard from './index'
 
-it("renders Avatar correctly", ()=>{
+it("renders EpisodeCard correctly", ()=>{
     render(<EpisodeCard/>)
 })
 

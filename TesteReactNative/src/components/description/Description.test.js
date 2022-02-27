@@ -4,7 +4,7 @@ import { render } from '@testing-library/react-native'
 
 import Description from './index'
 
-it("renders Avatar correctly", ()=>{
+it("renders Description correctly", ()=>{
     render(<Description/>)
 })
 

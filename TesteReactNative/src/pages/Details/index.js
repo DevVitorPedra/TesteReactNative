@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import {  ImageBackground, Text } from 'react-native'
+import {  ImageBackground } from 'react-native'
 import Character from '../../Widgets/character'
 import HighlighText from '../../components/highlight-text'
 import Header from '../../Widgets/header'
 import Texts from '../../components/text'
-import { StyledDetailsCard, StyledEpisodeName } from './style'
+
 import EpisodeCard from '../../components/episode-card'
 import ScrollBackground from '../../components/background'
 import Description from '../../components/description'

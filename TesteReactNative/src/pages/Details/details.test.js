@@ -2,9 +2,9 @@ import React from 'react'
 
 import { render, waitFor } from '@testing-library/react-native'
 
-import Details from './Details'
+import Details from './index'
 
-it("renders Details", () => {
+it("renders Details correctly", () => {
     render(<Details/>)
 })
 

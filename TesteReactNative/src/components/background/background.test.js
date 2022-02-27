@@ -4,7 +4,7 @@ import { render } from '@testing-library/react-native'
 
 import Background from './index'
 
-it("renders Avatar correctly", ()=>{
+it("renders Background correctly", ()=>{
     render(<Background/>)
 })
 
