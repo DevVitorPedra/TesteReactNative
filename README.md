@@ -28,7 +28,7 @@ O projeto foi finalizado, adequando os requisitos:
 
   Ter React Native CLI
   
-  Node e NPM ou YARN
+  Node e NPM 
   
   Emulador Mobile ou dispositivo físico
   
@@ -42,7 +42,7 @@ Para usar:
 
 ```
 Faça um git clone do projeto ou fork, e mande instalar as dependências,
-utilizando o NPM install ou yarn
+utilizando o NPM install
 Utilize o comando npx react-native run-android ou run-ios
 Será inicializado no Emulador ou no físico caso esteja plugado via usb
 ```
