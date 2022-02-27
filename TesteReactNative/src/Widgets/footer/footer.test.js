@@ -8,3 +8,4 @@ it("renders Footer correctly", ()=>{
     render(<StyledFooter/>)
 })
 
+

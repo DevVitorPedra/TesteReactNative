@@ -3,7 +3,8 @@ import { Pressable } from 'react-native'
 
 import Texts from '../../components/text'
 import Avatar from '../../components/avatar'
-import EpisodeCard from '../../components/episode-card'
+
+import ExpandedCard from '../../components/expanded-card'
 
 export default function Character({ navigation, url }) {
   
@@ -18,13 +19,12 @@ export default function Character({ navigation, url }) {
   useEffect(() => {
     awaiting()
   }, []);
-
   return (
     <Pressable testID='pressable' onPress={() => navigation.navigate('CharacterDetails', { url: url })}>
-      <EpisodeCard testID='episode-card'>
+      <ExpandedCard testID='expanded-card'>
       <Avatar testID="avatar" url={data.image}/>
         <Texts testID="text-name">{data.name}</Texts>
-      </EpisodeCard>
+      </ExpandedCard>
     </Pressable>
   )
 }

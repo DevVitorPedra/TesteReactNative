@@ -1,5 +1,5 @@
 import styled from "styled-components/native"
-export const StyledEpisodeCard = styled.View`
+export const StyledExpandedCard = styled.View`
     margin-bottom:10px;
     elevation:10;
     width:200px;

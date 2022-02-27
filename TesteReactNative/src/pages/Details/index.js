@@ -4,8 +4,7 @@ import Character from '../../Widgets/character'
 import HighlighText from '../../components/highlight-text'
 import Header from '../../Widgets/header'
 import Texts from '../../components/text'
-
-import EpisodeCard from '../../components/episode-card'
+import ExpandedCard from '../../components/expanded-card'
 import ScrollBackground from '../../components/background'
 import Description from '../../components/description'
 import StyledFooter from '../../Widgets/footer'
@@ -36,11 +35,11 @@ export default function Details({ navigation, route }) {
             <Texts testID='loading-text' >Really???</Texts>
           </> :
           <>
-            <EpisodeCard testID="episode-card">
+            <ExpandedCard testID="episode-card">
               <HighlighText testID='text-name' >{data.name}</HighlighText>
               <Description testID='text' >was released in</Description>
               <HighlighText testID='text'>{data.air_date}</HighlighText>
-            </EpisodeCard >
+            </ExpandedCard >
             
               <HighlighText testID='text'>Starring</HighlighText>
               {characters.map(item => {

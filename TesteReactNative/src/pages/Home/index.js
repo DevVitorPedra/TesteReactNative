@@ -45,7 +45,7 @@ export default function HomeSCreen({ navigation }) {
           setData('')
           setUrl(data.info.prev)
         }} /> : null}
-        
+
         {(data.info.next) ? <PaginationButton title="Next" action={() => {
           setData('')
           setUrl(data.info.next)

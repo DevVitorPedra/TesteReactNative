@@ -4,13 +4,13 @@ import Header from '../../Widgets/header'
 import Avatar from '../../components/avatar'
 import Texts from '../../components/text'
 import ScrollBackground from '../../components/background'
-import EpisodeCard from '../../components/episode-card'
+import ExpandedCard from '../../components/expanded-card'
 import StyledFooter from '../../Widgets/footer'
 export default function CharacterDetails({ route }) {
 
     const [data, setData] = useState('')
 
-    const awaiting = async () => {
+  const awaiting = async () => {
         const res = await fetch(route.params.url)
         const char = await res.json()
         setData(char)
@@ -33,7 +33,7 @@ export default function CharacterDetails({ route }) {
                         <Header testID="header" title="Character" />
 
                         <Avatar testID="avatar"  url={data.image} />
-                        <EpisodeCard testID="episode-card" style={{ marginBottom: 50 }}>
+                        <ExpandedCard testID="episode-card" style={{ marginBottom: 50 }}>
                             <Texts testID="text-name">{data.name}</Texts>
                             <Text testID="text">Specie</Text>
                             <Texts testID="text">{data.species}</Texts>
@@ -43,7 +43,7 @@ export default function CharacterDetails({ route }) {
                             <Texts testID="text">{data.origin.name}</Texts>
                             <Text testID="text">Last Seen</Text>
                             <Texts testID="text">{data.location.name}</Texts>
-                        </EpisodeCard>
+                        </ExpandedCard>
 
                     </>)}
             </>
