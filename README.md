@@ -10,7 +10,10 @@
 
 
 > Desenvolvido para trazer informações de episódios e personagens de Rick and Morty 
+
 > Desenvolvido para Teste de Código
+
+
 ### Requisitos de avaliação
 
 O projeto foi finalizado, adequando os requisitos:
