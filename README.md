@@ -2,10 +2,10 @@
 ## Rick and Morty Guide
 
 <img src="./TesteReactNative/screenshot1.png" alt="Imagem tela inicial" style="width:200px;">
-<img src="./TesteReactNative/screenshot2.png" alt="Imagem tela de descrição">
-<img src="./TesteReactNative/screenshot3.png" alt="Imagem descrição personagem">
-<img src="./TesteReactNative/screenshot4.png" alt="Imagem descrição personagem">
-<img src="./TesteReactNative/screenshot5.png" alt="Imagem descrição personagem">
+<img src="./TesteReactNative/screenshot2.png" alt="Imagem tela de descrição" style="width:200px;">
+<img src="./TesteReactNative/screenshot3.png" alt="Imagem descrição personagem" style="width:200px;">
+<img src="./TesteReactNative/screenshot4.png" alt="Imagem descrição personagem" style="width:200px;">
+<img src="./TesteReactNative/screenshot5.png" alt="Imagem descrição personagem" style="width:200px;">
 
 
 
