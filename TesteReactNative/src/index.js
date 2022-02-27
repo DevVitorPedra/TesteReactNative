@@ -9,9 +9,9 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import HomeScreen from './Home';
-import Details from './Details';
-import CharacterDetails from './CharacterDetails';
+import HomeScreen from './pages/Home';
+import Details from './pages/Details';
+import CharacterDetails from './pages/CharacterDetails';
 import 'react-native-gesture-handler'
 
 const Stack = createNativeStackNavigator()

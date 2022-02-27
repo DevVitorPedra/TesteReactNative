@@ -1,7 +1,8 @@
 import React from 'react'
+import { StyledEpisodeCard } from './style'
 
-export default function EpisodeCard() {
+export default function EpisodeCard({children}) {
   return (
-    <div>EpisodeCard</div>
+    <StyledEpisodeCard>{children}</StyledEpisodeCard>
   )
 }
