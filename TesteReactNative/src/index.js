@@ -9,11 +9,13 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-const Stack = createNativeStackNavigator()
 import HomeScreen from './Home';
 import Details from './Details';
 import CharacterDetails from './CharacterDetails';
 import 'react-native-gesture-handler'
+
+const Stack = createNativeStackNavigator()
+
 const App = () => {
 
   return (
@@ -23,8 +25,8 @@ const App = () => {
         <Stack.Screen
           name='Details'
           component={Details}
-          options={opt2} />
-        <Stack.Screen name="CharacterDetails" component={CharacterDetails} options={opt3} />
+          options={opt} />
+        <Stack.Screen name="CharacterDetails" component={CharacterDetails} options={opt} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -33,11 +35,6 @@ const App = () => {
 const opt = {
   headerShown: false,
 }
-const opt2 = {
-  headerShown: false
-}
-const opt3 = {
-  headerShown: false
-}
+
 
 export default App;
