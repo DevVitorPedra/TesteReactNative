@@ -10,7 +10,7 @@ export const StyledHeader = styled.View`
     justify-content:center;
     align-items:center;
 `
-export const StyledTest = styled.Text`
+export const StyledRickandMorty= styled.Text`
     font-family:RickandMorty;
     font-size:28px;
     color:black;
