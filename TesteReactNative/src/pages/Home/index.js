@@ -23,7 +23,7 @@ export default function HomeSCreen({ navigation }) {
 
   return (
     <>
-      <StatusBar barStyle='light-content' backgroundColor={'black'} />
+      <StatusBar role="status" data-testid="status-bar" barStyle='light-content' backgroundColor={'black'} />
       <Header title="Rick and Morty Guide" />
       <ScrollView testID='scrollview' contentContainerStyle={{ alignItems: 'center' }} style={{ backgroundColor: '#67E756' }}>
         {(data.length == 0) ?
@@ -41,12 +41,12 @@ export default function HomeSCreen({ navigation }) {
         }
       </ScrollView>
       {(data.length == 0) ? null : <StyledFooter testID='pagination'>
-        {(data.info.prev) ? <PaginationButton  title="Prev" action={() => {
+        {(data.info.prev) ? <PaginationButton testID="prev-button"  title="Prev" action={() => {
           setData('')
           setUrl(data.info.prev)
         }} /> : null}
 
-        {(data.info.next) ? <PaginationButton title="Next" action={() => {
+        {(data.info.next) ? <PaginationButton id="next button" testID="next-button" title="Next" action={() => {
           setData('')
           setUrl(data.info.next)
         }} /> : null}
