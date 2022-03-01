@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 
 
 export const StyledHeader = styled.View`
-    height:80px;
+    height:auto;
     width:100%;
     padding:5px;
     background-color:#08A8FF;
@@ -10,7 +10,7 @@ export const StyledHeader = styled.View`
     justify-content:center;
     align-items:center;
 `
-export const StyledTest = styled.Text`
+export const StyledRickandMorty= styled.Text`
     font-family:RickandMorty;
     font-size:28px;
     color:black;

@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { ScrollView, StatusBar, ImageBackground } from 'react-native'
 import Card from '../../Widgets/card'
-import Header from '../../Widgets/header'
+
 import Texts from '../../components/text'
 import PaginationButton from '../../components/pagination-button'
 import StyledFooter from '../../Widgets/footer'
-
-export default function HomeSCreen({ navigation }) {
+import ScreenDescription from '../../Widgets/screendescription'
+import Description from '../../components/description'
+export default function Episodes({ navigation }) {
   const [data, setData] = React.useState([])
 
   const [url, setUrl] = useState('https://rickandmortyapi.com/api/episode')
@@ -24,7 +25,7 @@ export default function HomeSCreen({ navigation }) {
   return (
     <>
       <StatusBar role="status" data-testid="status-bar" barStyle='light-content' backgroundColor={'black'} />
-      <Header title="Rick and Morty Guide" />
+     <ScreenDescription  title="Episodes" />
       <ScrollView testID='scrollview' contentContainerStyle={{ alignItems: 'center' }} style={{ backgroundColor: '#67E756' }}>
         {(data.length == 0) ?
           <>
@@ -45,7 +46,7 @@ export default function HomeSCreen({ navigation }) {
           setData('')
           setUrl(data.info.prev)
         }} /> : null}
-
+ <Description>Page {(data.info.next.charAt(data.info.next.length-1))-1} of {data.info.pages}</Description>
         {(data.info.next) ? <PaginationButton id="next button" testID="next-button" title="Next" action={() => {
           setData('')
           setUrl(data.info.next)

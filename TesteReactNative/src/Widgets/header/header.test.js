@@ -8,9 +8,15 @@ it("renders Header correctly", ()=>{
     render(<Header/>)
 })
 
-test('should load data first', async () => { 
+test('renders header title', () => { 
     const{ getAllByTestId } = render(<Header/>)
-    await waitFor(()=>expect(getAllByTestId('title').length).toBe(1))
-   await waitFor(()=>expect(getAllByTestId('header-image').length).toBe(1))
+     expect(getAllByTestId('title')).toBeTruthy()
+   
+    
+ })
+ test('renders header image', () => { 
+    const{ getAllByTestId } = render(<Header/>)
+     expect(getAllByTestId('header-image')).toBeTruthy()
+    
  })
 

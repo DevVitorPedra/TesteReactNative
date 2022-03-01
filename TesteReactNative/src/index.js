@@ -9,18 +9,21 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import HomeScreen from './pages/Home';
+import HomeScreen from './pages/Episodes';
 import Details from './pages/Details';
 import CharacterDetails from './pages/CharacterDetails';
 import 'react-native-gesture-handler'
-
+import Home from './pages/HomeScreen';
+import Characters from './pages/Characters';
 const Stack = createNativeStackNavigator()
 
 const App = () => {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Home'>
+      <Stack.Navigator initialRouteName='Homescreen'>
+        <Stack.Screen name="Homescreen" component={Home} options={opt}/>
+        <Stack.Screen name="Characters" component={Characters} options={opt}/>
         <Stack.Screen name="Home" component={HomeScreen} options={opt} />
         <Stack.Screen
           name='Details'
