@@ -1,12 +1,19 @@
 # {VSP}
 ## Rick and Morty Guide
 
-<img src="./TesteReactNative/screenshot3.png" alt="Imagem tela inicial">
-<img src="./TesteReactNative/screenshot2.png" alt="Imagem tela de descrição">
-<img src="./TesteReactNative/screenshot1.png" alt="Imagem descrição personagem">
+<img src="./TesteReactNative/screenshot1.png" alt="Imagem tela inicial" style="width:200px;">
+<img src="./TesteReactNative/screenshot2.png" alt="Imagem tela de descrição" style="width:200px;">
+<img src="./TesteReactNative/screenshot3.png" alt="Imagem descrição personagem" style="width:200px;">
+<img src="./TesteReactNative/screenshot4.png" alt="Imagem descrição personagem" style="width:200px;">
+<img src="./TesteReactNative/screenshot5.png" alt="Imagem descrição personagem" style="width:200px;">
+
+
 
 > Desenvolvido para trazer informações de episódios e personagens de Rick and Morty 
+
 > Desenvolvido para Teste de Código
+
+
 ### Requisitos de avaliação
 
 O projeto foi finalizado, adequando os requisitos:
@@ -24,7 +31,7 @@ O projeto foi finalizado, adequando os requisitos:
 
   Ter React Native CLI
   
-  Node e NPM ou YARN
+  Node e NPM 
   
   Emulador Mobile ou dispositivo físico
   
@@ -38,7 +45,7 @@ Para usar:
 
 ```
 Faça um git clone do projeto ou fork, e mande instalar as dependências,
-utilizando o NPM install ou yarn
+utilizando o NPM install
 Utilize o comando npx react-native run-android ou run-ios
 Será inicializado no Emulador ou no físico caso esteja plugado via usb
 ```
