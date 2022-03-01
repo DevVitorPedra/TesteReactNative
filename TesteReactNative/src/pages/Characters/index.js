@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { ScrollView, StatusBar, ImageBackground } from 'react-native'
-import Card from '../../Widgets/card'
-import Header from '../../Widgets/header'
+import Description from '../../components/description'
 import Texts from '../../components/text'
 import PaginationButton from '../../components/pagination-button'
 import StyledFooter from '../../Widgets/footer'
@@ -26,7 +25,7 @@ export default function Characters({ navigation }) {
   return (
     <>
       <StatusBar role="status" data-testid="status-bar" barStyle='light-content' backgroundColor={'black'} />
-     <ScreenDescription/>
+     <ScreenDescription  title="Characters" />
       <ScrollView testID='scrollview' contentContainerStyle={{ alignItems: 'center' }} style={{ backgroundColor: '#67E756' }}>
         {(data.length == 0) ?
           <>
@@ -37,7 +36,7 @@ export default function Characters({ navigation }) {
           :
           <>
             {data.results.map((item) => {
-              return <Character testID='characters' key={item.name} navigation={navigation} url={item.url} />
+              return <Character testID='characters' key={item.url} navigation={navigation} url={item.url} />
             })}
           </>
         }
@@ -47,7 +46,7 @@ export default function Characters({ navigation }) {
           setData('')
           setUrl(data.info.prev)
         }} /> : null}
-
+            <Description>Page {(data.info.next.charAt(data.info.next.length-1))-1} of {data.info.pages}</Description>
         {(data.info.next) ? <PaginationButton id="next button" testID="next-button" title="Next" action={() => {
           setData('')
           setUrl(data.info.next)

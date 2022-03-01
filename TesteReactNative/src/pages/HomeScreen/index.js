@@ -3,8 +3,9 @@ import { StatusBar, View, Text } from 'react-native'
 import ScrollBackground from '../../components/background'
 import Header from '../../Widgets/header'
 import PagerView from 'react-native-pager-view'
-
+import Locations from '../Locations'
 import Episodes from '../Episodes'
+import Characters from '../Characters'
 export default function Home({navigation}) {
   return (
     <>
@@ -16,8 +17,8 @@ export default function Home({navigation}) {
         showPageIndicator={true}
       style={{flex:1}} initialPage={1}>
         <View key="1"><Episodes navigation={navigation}/></View>
-        <View key="2"><Text>heya 2</Text></View>
-        <View key="3"><Text>Heya 3</Text></View>
+        <View key="2"><Characters  navigation={navigation}/></View>
+        <View key="3"><Locations /></View>
       </PagerView>
     </>
   )

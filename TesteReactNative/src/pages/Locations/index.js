@@ -7,10 +7,11 @@ import PaginationButton from '../../components/pagination-button'
 import StyledFooter from '../../Widgets/footer'
 import ScreenDescription from '../../Widgets/screendescription'
 import Description from '../../components/description'
+import LocationCard from '../../Widgets/location'
 export default function Episodes({ navigation }) {
   const [data, setData] = React.useState([])
 
-  const [url, setUrl] = useState('https://rickandmortyapi.com/api/episode')
+  const [url, setUrl] = useState('https://rickandmortyapi.com/api/location')
   const awaiting = async () => {
     const res = await fetch(url)
     const char = await res.json()
@@ -25,7 +26,7 @@ export default function Episodes({ navigation }) {
   return (
     <>
       <StatusBar role="status" data-testid="status-bar" barStyle='light-content' backgroundColor={'black'} />
-     <ScreenDescription  title="Episodes" />
+     <ScreenDescription  title="Locations" />
       <ScrollView testID='scrollview' contentContainerStyle={{ alignItems: 'center' }} style={{ backgroundColor: '#67E756' }}>
         {(data.length == 0) ?
           <>
@@ -36,7 +37,7 @@ export default function Episodes({ navigation }) {
           :
           <>
             {data.results.map((item) => {
-              return <Card testID='card' key={item.name} name={item.name} episode={item.episode} date={item.air_date} navigation={navigation} id={item.id} />
+              return <LocationCard key={item.name} name={item.name} type={item.type} dimension={item.dimension}  />
             })}
           </>
         }
