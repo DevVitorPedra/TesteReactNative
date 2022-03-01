@@ -5,11 +5,13 @@ import Header from '../../Widgets/header'
 import Texts from '../../components/text'
 import PaginationButton from '../../components/pagination-button'
 import StyledFooter from '../../Widgets/footer'
+import ScreenDescription from '../../Widgets/screendescription'
+import Character from '../../Widgets/character'
 
-export default function HomeSCreen({ navigation }) {
+export default function Characters({ navigation }) {
   const [data, setData] = React.useState([])
 
-  const [url, setUrl] = useState('https://rickandmortyapi.com/api/episode')
+  const [url, setUrl] = useState('https://rickandmortyapi.com/api/character')
   const awaiting = async () => {
     const res = await fetch(url)
     const char = await res.json()
@@ -24,7 +26,7 @@ export default function HomeSCreen({ navigation }) {
   return (
     <>
       <StatusBar role="status" data-testid="status-bar" barStyle='light-content' backgroundColor={'black'} />
-      <Header title="Rick and Morty Guide" />
+     <ScreenDescription/>
       <ScrollView testID='scrollview' contentContainerStyle={{ alignItems: 'center' }} style={{ backgroundColor: '#67E756' }}>
         {(data.length == 0) ?
           <>
@@ -35,7 +37,7 @@ export default function HomeSCreen({ navigation }) {
           :
           <>
             {data.results.map((item) => {
-              return <Card testID='card' key={item.name} name={item.name} episode={item.episode} date={item.air_date} navigation={navigation} id={item.id} />
+              return <Character testID='characters' key={item.name} navigation={navigation} url={item.url} />
             })}
           </>
         }

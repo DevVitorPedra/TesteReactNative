@@ -1,9 +1,11 @@
 import React from 'react'
-import { StatusBar } from 'react-native'
+import { StatusBar, View, Text } from 'react-native'
 import ScrollBackground from '../../components/background'
 import Header from '../../Widgets/header'
 import PagerView from 'react-native-pager-view'
-export default function Home() {
+
+import Episodes from '../Episodes'
+export default function Home({navigation}) {
   return (
     <>
       <StatusBar role="status" data-testid="status-bar" barStyle='light-content' backgroundColor={'black'} />
@@ -11,11 +13,11 @@ export default function Home() {
       <PagerView 
         orientation='horizontal'
         transitionStyle='curl'
-        showPageIndicator="true"
+        showPageIndicator={true}
       style={{flex:1}} initialPage={1}>
-        <View key="1"></View>
-        <View key="2"></View>
-        <View key="3"></View>
+        <View key="1"><Episodes navigation={navigation}/></View>
+        <View key="2"><Text>heya 2</Text></View>
+        <View key="3"><Text>Heya 3</Text></View>
       </PagerView>
     </>
   )
