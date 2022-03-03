@@ -1,5 +1,5 @@
 import React from 'react'
-import { Pressable } from 'react-native'
+
 import Texts from '../../components/text'
 import Description from '../../components/description'
 import ExpandedCard from '../../components/expanded-card'
