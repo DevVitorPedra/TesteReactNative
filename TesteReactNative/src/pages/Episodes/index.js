@@ -24,7 +24,7 @@ export default function Episodes({ navigation }) {
 
   return (
     <>
-      <StatusBar role="status" data-testid="status-bar" barStyle='light-content' backgroundColor={'black'} />
+    
      <ScreenDescription  title="Episodes" />
       <ScrollView testID='scrollview' contentContainerStyle={{ alignItems: 'center' }} style={{ backgroundColor: '#67E756' }}>
         {(data.length == 0) ?
