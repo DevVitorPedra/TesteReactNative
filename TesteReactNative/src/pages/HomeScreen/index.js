@@ -1,6 +1,5 @@
 import React from 'react'
 import { StatusBar, View, Text } from 'react-native'
-import ScrollBackground from '../../components/background'
 import Header from '../../Widgets/header'
 import PagerView from 'react-native-pager-view'
 import Locations from '../Locations'
@@ -9,7 +8,7 @@ import Characters from '../Characters'
 export default function Home({navigation}) {
   return (
     <>
-      <StatusBar role="status" data-testid="status-bar" barStyle='light-content' backgroundColor={'black'} />
+    
       <Header title="Rick and Morty Guide" />
       <PagerView 
         orientation='horizontal'
