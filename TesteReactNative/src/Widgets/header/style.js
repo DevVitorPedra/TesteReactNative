@@ -3,7 +3,7 @@ import styled from "styled-components/native";
 
 export const StyledHeader = styled.View`
     height:auto;
-    width:100%;
+    
     padding:5px;
     background-color:#08A8FF;
     flex-direction:row;

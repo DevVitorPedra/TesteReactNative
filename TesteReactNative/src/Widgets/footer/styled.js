@@ -5,6 +5,6 @@ export const StyledPageFooter = styled.View`
     justify-content:space-evenly;
     align-items:center;
     height:40px;
-    width:100%;
+    flex:1;
     background-color:#08A8FF;
 `

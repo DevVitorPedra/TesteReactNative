@@ -1,10 +1,7 @@
 import styled from "styled-components/native";
 
 export const StyledScreenDescription = styled.View`
-
-     height:35px;
-    width:100%;
-   
+    height:35px;
     background-color:#08A8FF;
     flex-direction:row;
     justify-content:space-between;

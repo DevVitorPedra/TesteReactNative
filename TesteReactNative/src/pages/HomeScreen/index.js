@@ -15,9 +15,9 @@ export default function Home({navigation}) {
         transitionStyle='curl'
         showPageIndicator={true}
       style={{flex:1}} initialPage={1}>
-        <View key="1"><Episodes navigation={navigation}/></View>
-        <View key="2"><Characters  navigation={navigation}/></View>
-        <View key="3"><Locations /></View>
+        <View key="1" style={{flex:1}}><Episodes navigation={navigation}/></View>
+        <View key="2" style={{flex:1}}><Characters  navigation={navigation}/></View>
+        <View key="3" style={{flex:1}}><Locations /></View>
       </PagerView>
     </>
   )

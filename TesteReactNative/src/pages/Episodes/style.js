@@ -4,7 +4,7 @@ export const StyledPagination = styled.View`
     flex-direction:row;
     justify-content:space-evenly;
     height:40px;
-    width:100%;
+   flex:1;
     background-color:#08A8FF;
 `
 export const StyledPaginationButton = styled.Button`
