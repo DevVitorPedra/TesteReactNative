@@ -15,6 +15,7 @@ import CharacterDetails from './pages/CharacterDetails';
 import 'react-native-gesture-handler'
 import Home from './pages/HomeScreen';
 import Characters from './pages/Characters';
+import { SafeAreaView, ScrollView } from 'react-native';
 const Stack = createNativeStackNavigator()
 
 const App = () => {
@@ -22,22 +23,22 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName='Homescreen'>
-        <Stack.Screen name="Homescreen" component={Home} options={opt}/>
-        <Stack.Screen name="Characters" component={Characters} options={opt}/>
-        <Stack.Screen name="Home" component={HomeScreen} options={opt} />
+        <Stack.Screen name="Homescreen" component={Home} />
+        <Stack.Screen name="Characters" component={Characters} />
+        <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen
           name='Details'
           component={Details}
-          options={opt} />
-        <Stack.Screen name="CharacterDetails" component={CharacterDetails} options={opt} />
+        />
+        <Stack.Screen name="CharacterDetails" component={CharacterDetails} />
       </Stack.Navigator>
     </NavigationContainer>
+
+
+
+
   );
 };
-
-const opt = {
-  headerShown: false,
-}
 
 
 export default App;
