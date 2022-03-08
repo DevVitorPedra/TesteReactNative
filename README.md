@@ -1,6 +1,8 @@
 # {VSP}
 ## Rick and Morty Guide
 
+
+<img src="./TesteReactNative/screenshot6.png" alt="Imagem descrição personagem" style="width:200px;">
 <img src="./TesteReactNative/screenshot1.png" alt="Imagem tela inicial" style="width:200px;">
 <img src="./TesteReactNative/screenshot2.png" alt="Imagem tela de descrição" style="width:200px;">
 <img src="./TesteReactNative/screenshot3.png" alt="Imagem descrição personagem" style="width:200px;">
