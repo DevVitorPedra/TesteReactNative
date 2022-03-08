@@ -17,6 +17,7 @@ export default function Details() {
 
   useEffect(() => {
     awaiting()
+    console.log(characters,data)
   }, []);
   return (
     <>
