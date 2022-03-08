@@ -18,6 +18,7 @@ import {
   View,
 
 } from 'react-native';
+import Details from './src/pages/Details';
 
 
 const App = () => {
@@ -25,8 +26,9 @@ const App = () => {
   return (
   
        <NavigationContainer>
-         <Stack.Navigator initialRouteName='HomeScreen'>
+         <Stack.Navigator initialRouteName='Details'>
            <Stack.Screen name='HomeScreen' component={HomeScreen} options={{headerShown:false}}/>
+           <Stack.Screen name='Details' component={Details} options={{headerShown:false}}/>
          </Stack.Navigator>
        </NavigationContainer>
      
