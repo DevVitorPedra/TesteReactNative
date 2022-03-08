@@ -9,7 +9,7 @@ import { ScrollView } from 'react-native-gesture-handler'
 export default function Home({navigation}) {
   return (
     <>
-    <ScrollView contentInsetAdjustmentBehavior='automatic'>
+   
       <Header title="Rick and Morty Guide" />
       <PagerView 
         orientation='horizontal'
@@ -20,7 +20,7 @@ export default function Home({navigation}) {
         <View key="2" style={{flex:1}}><Characters  navigation={navigation}/></View>
         <View key="3" style={{flex:1}}><Locations /></View>
       </PagerView>
-      </ScrollView>
+      
     </>
   )
 }

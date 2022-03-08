@@ -1,11 +1,19 @@
 import React from 'react'
 import { View } from 'react-native'
-import Texts from '../../components/Texts/Texts'
-
-export default function HomeScreen() {
+import ScrollBackground from '../../components/background'
+import PagerView from 'react-native-pager-view'
+import Header from '../../widgets/Header'
+export default function HomeScreen({navigation}) {
   return (
-    <View style={{backgroundColor:"blue"}}>
-        <Texts>Dalehooo</Texts>
-    </View>
+ <ScrollBackground>
+   <Header title="Rick and Morty Guide"/>
+   <PagerView
+    orientation='horizontal'
+    transitionStyle='curl'
+    showPageIndicator={true}
+  style={{flex:1}} initialPage={1}>
+       
+   </PagerView>
+ </ScrollBackground>
   )
 }
