@@ -19,16 +19,17 @@ import {
 
 } from 'react-native';
 import Details from './src/pages/Details';
-
+import Characters from './src/pages/Characters'
 
 const App = () => {
  
   return (
   
        <NavigationContainer>
-         <Stack.Navigator initialRouteName='Details'>
+         <Stack.Navigator initialRouteName='Homescreen'>
            <Stack.Screen name='HomeScreen' component={HomeScreen} options={{headerShown:false}}/>
            <Stack.Screen name='Details' component={Details} options={{headerShown:false}}/>
+           <Stack.Screen name='Characters' component={Characters} options={{headerShown:false}}/>
          </Stack.Navigator>
        </NavigationContainer>
      

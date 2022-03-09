@@ -7,13 +7,13 @@ import ExpandedCard from '../../components/expanded-card'
 import HighlightText from '../../components/highlight-text'
 import Description from '../../components/description'
 import Character from '../../widgets/character'
-export default function Details({navigation}) {
+export default function Details({navigation,route}) {
 
   const [data, setData] = useState('')
   const [characters, setCharacters] = useState([])
 
   const awaiting = async () => {
-    const res = await fetch(`https://rickandmortyapi.com/api/episode/1`)
+    const res = await fetch(`https://rickandmortyapi.com/api/episode/${route.params.id}`)
     const char = await res.json()
     setData(char)
     setCharacters(char.characters)
