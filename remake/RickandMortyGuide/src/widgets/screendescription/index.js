@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { Animated, View } from 'react-native'
-import { StyledRickandMorty } from '../Header/style'
+import { StyledRickandMorty } from '../header/style'
 import { StyledScreenDescription,StyledArrow } from './style'
 
 

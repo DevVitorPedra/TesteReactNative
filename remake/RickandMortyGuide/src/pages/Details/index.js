@@ -1,5 +1,5 @@
 import React, {useState,useEffect} from 'react'
-import Header from '../../widgets/Header'
+import Header from '../../widgets/header'
 import ScrollBackground from '../../components/background'
 import { ImageBackground } from 'react-native'
 import Texts from '../../components/text'
