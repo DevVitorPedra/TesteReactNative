@@ -5,10 +5,7 @@ module.exports = {
         const char = await res.json()
        return  setData(char)
        } catch (error) {
-           return setData({results:{
-               id:400,
-               name:"Falha ao carregar"
-           }})
+          console.error(error.message)
        }
     }
 }
