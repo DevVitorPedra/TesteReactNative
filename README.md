@@ -52,8 +52,8 @@ Para usar:
 ```
 Faça um git clone do projeto e mande instalar as dependências,
 utilizando o NPM ou YARN
-Utilize o comando npm run android ou npm run ios
-Será feito o bundler do projeto
+Utilize o comando run android ou run ios
+Aguarde o processo de geração do código fonte
 Será inicializado no Emulador ou no físico caso esteja plugado via usb
 ```
 
