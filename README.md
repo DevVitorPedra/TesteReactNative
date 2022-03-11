@@ -2,12 +2,14 @@
 ## Rick and Morty Guide
 
 
+<div>
 <img src="./screenshot6.png" alt="Imagem descrição personagem" style="width:200px;">
 <img src="./screenshot1.png" alt="Imagem tela inicial" style="width:200px;">
 <img src="./screenshot2.png" alt="Imagem tela de descrição" style="width:200px;">
 <img src="./screenshot3.png" alt="Imagem descrição personagem" style="width:200px;">
 <img src="./screenshot4.png" alt="Imagem descrição personagem" style="width:200px;">
 <img src="./screenshot5.png" alt="Imagem descrição personagem" style="width:200px;">
+</div>
 
 
 
