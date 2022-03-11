@@ -5,6 +5,7 @@ module.exports = {
         const char = await res.json()
        return  setData(char)
        } catch (error) {
+           setData('')
           console.error(error.message)
        }
     }
