@@ -2,12 +2,12 @@
 ## Rick and Morty Guide
 
 
-<img src="./TesteReactNative/screenshot6.png" alt="Imagem descrição personagem" style="width:200px;">
-<img src="./TesteReactNative/screenshot1.png" alt="Imagem tela inicial" style="width:200px;">
-<img src="./TesteReactNative/screenshot2.png" alt="Imagem tela de descrição" style="width:200px;">
-<img src="./TesteReactNative/screenshot3.png" alt="Imagem descrição personagem" style="width:200px;">
-<img src="./TesteReactNative/screenshot4.png" alt="Imagem descrição personagem" style="width:200px;">
-<img src="./TesteReactNative/screenshot5.png" alt="Imagem descrição personagem" style="width:200px;">
+<img src="./TesteReactNative/screenshot6.jpeg" alt="Imagem descrição personagem" style="width:200px;">
+<img src="./TesteReactNative/screenshot1.jpeg" alt="Imagem tela inicial" style="width:200px;">
+<img src="./TesteReactNative/screenshot2.jpeg" alt="Imagem tela de descrição" style="width:200px;">
+<img src="./TesteReactNative/screenshot3.jpeg" alt="Imagem descrição personagem" style="width:200px;">
+<img src="./TesteReactNative/screenshot4.jpeg" alt="Imagem descrição personagem" style="width:200px;">
+<img src="./TesteReactNative/screenshot5.jpeg" alt="Imagem descrição personagem" style="width:200px;">
 
 
 
@@ -24,6 +24,8 @@ O projeto foi finalizado, adequando os requisitos:
 - [x] Transição entre telas
 - [x] Detalhes dos episódios
 - [x] Detalhes de cada personagem no episódio
+- [x] Detalhes dos personagens
+- [x] Detalhes dos lugares
 
 
 
@@ -33,7 +35,7 @@ O projeto foi finalizado, adequando os requisitos:
 
   Ter React Native CLI
   
-  Node e NPM 
+  NPM ou YARN
   
   Emulador Mobile ou dispositivo físico
   
@@ -46,9 +48,10 @@ O projeto foi finalizado, adequando os requisitos:
 Para usar:
 
 ```
-Faça um git clone do projeto ou fork, e mande instalar as dependências,
+Faça um git clone do projeto e mande instalar as dependências,
 utilizando o NPM install
-Utilize o comando npx react-native run-android ou run-ios
+Utilize o comando npm run android ou npm run ios
+Será feito o bundler do projeto
 Será inicializado no Emulador ou no físico caso esteja plugado via usb
 ```
 
