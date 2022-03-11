@@ -7,18 +7,14 @@ import PaginationButton from '../../components/pagination-button'
 import StyledFooter from '../../widgets/footer'
 import ScreenDescription from '../../widgets/screendescription'
 import Description from '../../components/description'
+import { getData } from '../../utils/functions'
 export default function Episodes({ navigation }) {
   const [data, setData] = React.useState([])
 
   const [url, setUrl] = useState('https://rickandmortyapi.com/api/episode')
-  const awaiting = async () => {
-    const res = await fetch(url)
-    const char = await res.json()
-    setData(char)
-  }
-
+  
   useEffect(() => {
-    awaiting()
+    getData(url,setData)
   }, [url]);
 
 

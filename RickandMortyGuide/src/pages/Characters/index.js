@@ -7,20 +7,16 @@ import PaginationButton from '../../components/pagination-button'
 import StyledFooter from '../../widgets/footer'
 import Description from '../../components/description'
 import Texts from '../../components/text'
+import { getData } from '../../utils/functions'
 
 export default function Characters({navigation}) {
   const [data, setData] = React.useState([])
   const [url, setUrl] = useState('https://rickandmortyapi.com/api/character')
 
 
-  const awaiting = async () => {
-    const res = await fetch(url)
-    const char = await res.json()
-    setData(char)
-  }
 
   useEffect(() => {
-    awaiting()
+    getData(url,setData)
   }, [url]);
   return (
     <>

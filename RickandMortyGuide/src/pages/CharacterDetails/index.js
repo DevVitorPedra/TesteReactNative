@@ -6,18 +6,14 @@ import Texts from '../../components/text'
 import ScrollBackground from '../../components/background'
 import ExpandedCard from '../../components/expanded-card'
 import StyledFooter from '../../widgets/footer'
+import { getData } from '../../utils/functions'
 export default function CharacterDetails({ route }) {
 
     const [data, setData] = useState('')
-
-  const awaiting = async () => {
-        const res = await fetch(route.params.url)
-        const char = await res.json()
-        setData(char)
-    }
+    const url = 'route.params.url'
 
     useEffect(() => {
-        awaiting()
+        getData(url, setData)
     }, []);
 
     return (

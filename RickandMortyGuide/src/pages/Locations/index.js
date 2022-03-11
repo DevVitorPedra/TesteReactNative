@@ -6,25 +6,20 @@ import StyledFooter from '../../widgets/footer'
 import ScreenDescription from '../../widgets/screendescription'
 import Description from '../../components/description'
 import LocationCard from '../../widgets/location'
+import { getData } from '../../utils/functions'
 export default function Episodes({ navigation }) {
   const [data, setData] = React.useState([])
-
   const [url, setUrl] = useState('https://rickandmortyapi.com/api/location')
-  const awaiting = async () => {
-    const res = await fetch(url)
-    const char = await res.json()
-    setData(char)
-  }
 
   useEffect(() => {
-    awaiting()
+    getData(url.setData)
   }, [url]);
 
 
   return (
     <>
-    
-     <ScreenDescription  title="Locations" />
+
+      <ScreenDescription title="Locations" />
       <ScrollView testID='scrollview' contentContainerStyle={{ alignItems: 'center' }} style={{ backgroundColor: '#67E756' }}>
         {(data.length == 0) ?
           <>
@@ -35,17 +30,17 @@ export default function Episodes({ navigation }) {
           :
           <>
             {data.results.map((item) => {
-              return <LocationCard key={item.name} name={item.name} type={item.type} dimension={item.dimension}  />
+              return <LocationCard key={item.name} name={item.name} type={item.type} dimension={item.dimension} />
             })}
           </>
         }
       </ScrollView>
       {(data.length == 0) ? null : <StyledFooter testID='pagination'>
-        {(data.info.prev) ? <PaginationButton testID="prev-button"  title="Prev" action={() => {
+        {(data.info.prev) ? <PaginationButton testID="prev-button" title="Prev" action={() => {
           setData('')
           setUrl(data.info.prev)
         }} /> : null}
- <Description>Page {(data.info.next.charAt(data.info.next.length-1))-1} of {data.info.pages}</Description>
+        <Description>Page {(data.info.next.charAt(data.info.next.length - 1)) - 1} of {data.info.pages}</Description>
         {(data.info.next) ? <PaginationButton id="next button" testID="next-button" title="Next" action={() => {
           setData('')
           setUrl(data.info.next)
