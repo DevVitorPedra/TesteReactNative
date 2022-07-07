@@ -11,7 +11,7 @@ import { getData } from '../../utils/functions'
 export default function Details({navigation,route}) {
 
   const [data, setData] = useState('')
-  const [characters, setCharacters] = useState([])
+  const [characters, setCharacters] = useState('')
   const url = `https://rickandmortyapi.com/api/episode/${route.params.id}`
   
     
@@ -39,9 +39,9 @@ export default function Details({navigation,route}) {
         <HighlightText>{data.air_date}</HighlightText>
       </ExpandedCard>
       <HighlightText>Starring</HighlightText>
-      {characters.map(item => {
+      {(data)? data.characters.map(item => {
                 return <Character testID='characters' key={item} navigation={navigation} url={item} />
-              })}
+              }):<HighlightText>Nobody</HighlightText>}
       </>  
     }
       </ScrollBackground>

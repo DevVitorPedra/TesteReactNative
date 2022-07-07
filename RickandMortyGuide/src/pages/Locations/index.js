@@ -12,7 +12,7 @@ export default function Episodes({ navigation }) {
   const [url, setUrl] = useState('https://rickandmortyapi.com/api/location')
 
   useEffect(() => {
-    getData(url.setData)
+    getData(url,setData)
   }, [url]);
 
 

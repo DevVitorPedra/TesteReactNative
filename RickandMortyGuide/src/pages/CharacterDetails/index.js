@@ -10,7 +10,7 @@ import { getData } from '../../utils/functions'
 export default function CharacterDetails({ route }) {
 
     const [data, setData] = useState('')
-    const url = 'route.params.url'
+    const url = route.params.url
 
     useEffect(() => {
         getData(url, setData)
