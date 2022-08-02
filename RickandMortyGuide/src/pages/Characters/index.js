@@ -16,6 +16,7 @@ export default function Characters({navigation}) {
 
 
   useEffect(() => {
+    console.log('Characters')
     getData(url,setData)
   }, [url]);
   return (

@@ -7,6 +7,7 @@ import Episodes from '../Episodes'
 import Locations from '../Locations'
 export default function HomeScreen({navigation}) {
   return (
+    
  <>
    <Header title="Rick and Morty Guide"/>
    <PagerView

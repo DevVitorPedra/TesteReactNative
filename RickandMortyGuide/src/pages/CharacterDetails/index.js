@@ -13,6 +13,7 @@ export default function CharacterDetails({ route }) {
     const url = route.params.url
 
     useEffect(() => {
+        console.log('Character details')
         getData(url, setData)
     }, []);
 

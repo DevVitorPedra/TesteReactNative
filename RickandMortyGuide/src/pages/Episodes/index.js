@@ -14,6 +14,7 @@ export default function Episodes({ navigation }) {
   const [url, setUrl] = useState('https://rickandmortyapi.com/api/episode')
   
   useEffect(() => {
+    console.log('Episodes')
     getData(url,setData)
   }, [url]);
 

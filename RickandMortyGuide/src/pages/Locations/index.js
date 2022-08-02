@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { ScrollView, StatusBar, ImageBackground } from 'react-native'
+import { ScrollView, ImageBackground } from 'react-native'
 import Texts from '../../components/text'
 import PaginationButton from '../../components/pagination-button'
 import StyledFooter from '../../widgets/footer'
@@ -11,6 +11,7 @@ export default function Episodes({ navigation }) {
   const [data, setData] = React.useState([])
   const [url, setUrl] = useState('https://rickandmortyapi.com/api/location')
 
+  console.log('Locations')
   useEffect(() => {
     getData(url,setData)
   }, [url]);
